@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "An app to find new friends.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseylholston/FriendFinder.git"
+  },
+  "keywords": [
+    "friends",
+    "lonely"
+  ],
+  "author": "caseylholston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caseylholston/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/caseylholston/FriendFinder#readme"
+}
