@@ -11,10 +11,8 @@ const html = require('./app/routing/htmlRoutes.js');
 const apis = require('./app/routing/apiRoutes.js');
 
 app.use('/', html);
-app.use('/home', html);
-app.use('/survey', html);
 
-app.use('/api/friends', apis);
+app.use('/', apis);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
