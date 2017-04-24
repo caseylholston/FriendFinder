@@ -1,18 +1,19 @@
 var express = require('express');
-var path = require('path')
+var path = require('path');
 var apis = express();
 
-html.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/home.html"));
-});
+//var friendList = require('../data/friends.js');
 
-html.get("/home", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/home.html"));
+apis.get('/api/friends', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/survey.html'));
 });
+//     console.log('I am in the API Routes file');
+//   response.json(path.join(__dirname, friendList.friends));
 
-html.get("/survey", function(req, res) {
-  res.sendFile(path.join(__dirname, "../public/survey.html"));
-});
+
+// apis.post("/api/friends", function(req, res) {
+//   res.sendFile(path.join(__dirname, "../public/home.html"));
+// });
 
 
 module.exports = apis;
