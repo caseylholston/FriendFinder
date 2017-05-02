@@ -10,9 +10,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 const html = require('./app/routing/htmlRoutes.js');
 const apis = require('./app/routing/apiRoutes.js');
 
-app.use('/', html);
-
-app.use('/', apis);
+app.use(html);
+app.use(apis);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
